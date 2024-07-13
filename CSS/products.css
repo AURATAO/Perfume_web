@@ -1,0 +1,172 @@
+@import url('./global.css');
+
+
+.productsPage{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 56px;
+}
+
+/*brands bar*/
+
+.brands_bar{
+    width:100%;
+    background-color: #916000;
+    height:56px;
+    margin:0 auto;
+    padding: 14px 15px;
+}
+
+.brands_bar ul{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:28px;
+}
+
+.brands_bar a{
+    font-size:20px;
+    color: white;
+}
+
+.brands_bar a:hover{
+    color:rgb(208, 206, 206);
+}
+
+@media (max-width:767px){
+    .brands_bar{
+        display: none;
+    }
+}
+
+/*products*/
+
+.productsList{
+    margin: auto;
+}
+
+.productsList ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 80px 15px;
+    gap:30px;
+}
+
+.productsList ul li{
+    padding:5px;
+    width: calc(100% / 4 - 30px);
+    border:1px solid transparent;
+}
+
+.productsList ul li a{
+    line-height: 1.5;
+}
+
+.productsList ul li img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.productsList ul li:hover{
+    border: 1px solid var(--main-lightGray);
+}
+
+.productsList ul li a h3{
+    font-size:24px;
+    font-weight:500;
+    line-height:36px;
+}
+
+.productsList ul li .item p{
+    font-size: 16px;
+    font-weight: light;
+}
+
+.productsList ul li .item .price{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    gap:5px;
+}
+
+.price span{
+    color: #8D8D8D;
+    font-size:16px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.productsList ul li .item ul{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 11px;
+    padding: 0px;
+    border: 0px;
+}
+
+.productsList ul li .item ul li{
+    width: 20px;
+    padding: 0px;
+    border: 0px;
+}
+
+.productsList ul li .item ul li:hover {
+   border: 0px;
+}
+
+.productsList ul li .item ul li img {
+    width: 20px;
+}
+
+@media (max-width:767px){
+    .productsList ul{
+        padding:40px 15px;
+        gap:30px;
+    }
+
+    .productsList ul li{
+        width: calc(100% / 2 - 30px);
+    }
+    .productsList ul li a h3{
+        font-size: 20px;
+        line-height:30px;
+    }
+}
+
+/*pagination*/
+
+.pagination ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap:20px;
+}
+
+.pagination li{
+    width: 20px;
+}
+
+.pagination li a{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: transparent;
+    border:0px;
+    padding: 0px;
+}
+
+.pagination li .active{
+    color: var(--main-brown);
+    border-bottom: 1px solid var(--main-brown);
+}
+

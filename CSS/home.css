@@ -1,0 +1,410 @@
+@import url('./global.css');
+
+
+.home{
+    width: 100%;
+    min-width: 100vph; 
+    padding-top: 56px;
+}
+
+/**/
+.banner{
+    background-image: url('../img/home/banner.jpg');
+    margin:0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height:calc(100vh-56px);  
+    min-height: 800px;
+}
+
+.banner > div{
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner_content{
+    width:50%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:20px;
+    color:white;
+}
+
+.banner_content h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+}
+
+.banner_content p{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color:white;
+}
+
+.banner_content a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+
+    border: 2px solid #FFFFFF;
+    border-radius:30px;
+    font-size:26px;
+    color:white;
+}
+
+.banner_content a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+@media (width <= 767px){
+    .banner{
+        height: calc(70vh - 56px);
+        min-height:800px;
+    }
+
+    .banner_content{
+        width:100%;
+        min-width: auto;
+        padding:0 15px;
+    }
+}
+
+
+
+/*content*/
+
+.content{
+    width:100%;
+    max-width: 1110px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.content > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > div > img{
+    width: 50%;
+    aspect-ratio: 1/1; 
+    object-fit: cover;
+
+}
+
+
+.content_text{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 75px;
+    gap: 16px;
+}
+
+.content_1, .content_3{
+    flex-direction: row-reverse;
+}
+
+.content_text h3{
+    font-size:32px;
+    font-weight: bold;
+}
+
+.content_text p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight:400;
+}
+
+.content_text a{
+    color:#AC8A46;
+}
+.content_3 img{
+    object-position: left;
+}
+
+.content .content_4 img{
+    aspect-ratio: auto;
+    height: 1080px;
+    object-position: right;
+}
+
+.content_4_text{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    padding:4% 7%;
+}
+
+.content_4_text li h4{
+    font-size:24px;
+    font-weight:600;
+    line-height: 36px;
+}
+
+.content_4_text li h4 span{
+    display:block;
+}
+
+
+.content_4_text li p{
+    font-size: 16px;
+    line-height: 24px;
+    font-size:300;
+}
+
+.content_4_text li:last-child a{
+    font-size:20px;
+    padding: 18px 20px;
+    border:2px solid black;
+    border-radius:30px;
+    text-align: center;
+}
+
+.content_4_text li:last-child a:hover{
+    background-color: #0000000D;
+}
+
+@media (width <= 767px){
+    .content  div{
+        flex-direction: column;
+        padding:0px 15px;
+        gap:5px;
+    }
+    .content  div img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .content_text{
+        width: 100%;
+        padding:20px 0 30px 0;
+        margin-bottom: 32px;
+    }
+    .content .content_4 > img{
+        aspect-ratio: auto;
+        height: 680px;
+    }
+    .content_4_text {
+        padding: 0px;
+
+    }
+}
+
+
+
+/*selected items*/
+
+.selected_content{
+    background-color:  #E0E0E0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.selected_products{
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+}
+
+
+.selected_products li{
+    width:calc(100%/3);
+    height:100%;
+}
+
+.selected_products li a {
+    width: 100%;
+    height:100%;
+}
+
+.selected_img{
+    width:100%;
+    height:450px;
+    position: relative;
+}
+
+.soldout_tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+    font-size:24px;
+}
+
+.selected_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+.selected_content_text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.selected_content_text h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.selected_content_text a{
+    font-size: 16px;
+}
+
+.selected_content_text .price{
+    padding-top: 16px;
+    font-size:16px;
+    display: flex;
+    gap:8px;
+}
+
+.selected_content_text .price .salesPrice{
+    color: var(--main-gray);
+    text-decoration: line-through; 
+}
+
+
+@media (width <= 1000px){
+    .selected_products{
+        max-width: 90%;
+    }
+
+    .selected_products li:first-child .selected_img img{
+        object-position: bottom;
+    }
+}
+
+@media(width <= 767px){
+    .selected_products{
+        max-width:100%;
+        flex-direction: column;
+        padding:0 15px;
+    }
+    .selected_products li{
+        width: 100%;
+    }
+
+    .selected_img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+
+/*recycling*/
+
+.recycling_adv{
+    max-width: 1110px;
+    width:100%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:60px 0 60px 0;
+    gap:30px;
+
+}
+
+.recycling_adv img{
+    width: 65%;
+    height:auto;
+}
+
+.recycling_content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.recycling_content h3{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+
+.recycling_adv .recycling_content .subTitle{
+    margin-bottom:15px;
+    font-size:20px;
+    line-height:30px;
+}
+
+.recycling_content .subTitle + p{
+    margin-bottom:15px;
+    font-size:16px;
+    line-height: 24px;
+}
+
+.recycling_content a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #AC8A46;    
+}
+
+.recycling_content a:hover{
+    color: rgb(172, 138, 70, 0.8);
+}
+
+
+@media(width<=1110px){
+    .recycling_adv{
+        flex-direction: column;
+        gap:8px;
+        padding:40px 0 40px 0;
+    }
+
+    .recycling_adv img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .recycling_content{
+        padding-right:20px ;
+        padding-left: 20px;
+    }
+
+
+}
