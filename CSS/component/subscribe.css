@@ -1,7 +1,7 @@
 /*subscribe*/
 
 .subscribe{
-    background-image: url('/img/subscribe/subscribeBackground.jpg?ver=20240713'); /*try million times due to the problem of displaying img on github page*/
+    background-image: url('img/Subscribe.jpg'); /*try million times due to the problem of displaying img on github page*/
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
